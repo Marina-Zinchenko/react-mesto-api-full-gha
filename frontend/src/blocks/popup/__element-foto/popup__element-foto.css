@@ -1,0 +1,15 @@
+.popup__element-foto {
+  max-width: 75vh;
+  min-width: 433px;
+  height: 540px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .popup__element-foto {
+    max-width: 240px;
+    min-width: 240px;
+    height: 299px;
+  }
+}

@@ -1,0 +1,28 @@
+.popup__create {
+  width: 358px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 47px;
+  }
+  
+  .popup__create:hover {
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width:960px) {
+    .popup__create {
+      width: 238px;
+      min-height: 46px;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 40px;
+    }
+  }

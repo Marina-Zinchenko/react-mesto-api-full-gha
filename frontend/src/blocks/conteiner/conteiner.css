@@ -1,0 +1,19 @@
+.conteiner {
+  max-width: calc(100% - 2*200px);
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  overflow:hidden;
+ }
+
+ @media screen and (max-width: 660px) {
+  .conteiner {
+    width: calc(100% - 2*70px);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .conteiner {
+    width: 100%;
+  }
+}

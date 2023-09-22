@@ -1,0 +1,14 @@
+.header__container {
+  margin: 0;
+  padding: 5px 0 0px 0;
+  min-width: 300px;
+  min-height: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+@media screen and (max-width: 900px) {
+  .header__container {
+    width: 100%;
+  }
+}

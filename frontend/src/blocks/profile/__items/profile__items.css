@@ -1,0 +1,14 @@
+.profile__items {
+  max-width: 60%;
+  margin-left: 32px;
+  margin-top: 7px;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile__items {
+    max-width: 282px;
+    width: 100%;
+    margin: 25px auto 18px auto;
+    text-align: center;
+  }
+}

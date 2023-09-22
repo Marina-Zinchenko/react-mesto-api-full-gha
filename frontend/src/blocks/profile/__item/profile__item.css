@@ -1,0 +1,15 @@
+.profile__item {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile__item {
+    padding-left: 25px;
+    gap: 10px;
+  }
+}

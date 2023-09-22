@@ -1,0 +1,24 @@
+.header {
+  width: calc(100% - 2*200px);
+  margin: 45px auto auto auto;
+  padding-bottom: 41px;
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    width: calc(100% - 2*70px);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header {
+    width: 100%;
+    margin: 28px auto auto auto;
+    padding-left: 27;
+    padding-bottom: 32px;
+  }
+}

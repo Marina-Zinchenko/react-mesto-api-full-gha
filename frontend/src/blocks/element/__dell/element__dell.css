@@ -1,0 +1,16 @@
+.element__dell {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  width: 22px;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.element__dell :hover {
+  opacity: 0.5;
+}

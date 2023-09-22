@@ -1,0 +1,16 @@
+.element__items {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  grid-template-rows:auto;
+  gap: 17px 16px;
+}
+
+@media screen and (max-width: 460px) {
+  .element__items {
+    grid-template-columns: repeat(1, minmax(282px, 1fr));
+  }
+}

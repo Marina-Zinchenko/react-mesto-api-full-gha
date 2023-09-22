@@ -1,0 +1,14 @@
+.profile__box {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+ @media screen and (max-width: 1023px) {
+  .profile__box {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
