@@ -1,4 +1,4 @@
-export const BASE_URL = "https://api.mesto.zinchenkomv.nomoredomainsrocks.ru";
+export const BASE_URL = "https://mesto.zinchenkomv.nomoredomainsrocks.ru";
 
 function checkErrors(res) {
   if (!res.ok) {

@@ -87,7 +87,7 @@ class Api {
 }
 
 const api = new Api({
-  url: "https://api.mesto.zinchenkomv.nomoredomainsrocks.ru",
+  url: "https://mesto.zinchenkomv.nomoredomainsrocks.ru",
 });
 
 export default api;
