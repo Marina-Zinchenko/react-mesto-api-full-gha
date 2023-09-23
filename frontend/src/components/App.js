@@ -134,8 +134,8 @@ function App() {
     // eslint-disable-next-line
   }, []);
 
-  const handleTokenCheck = (token) => {
-    const jwt = localStorage.getItem("token");
+  const handleTokenCheck = () => {
+    const jwt = localStorage.getItem("jwt");
     if (!jwt) {
       return;
     }
