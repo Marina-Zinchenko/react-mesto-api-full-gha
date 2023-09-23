@@ -12,7 +12,7 @@ export const register = (email, password) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ password, email }),
+    body: JSON.stringify({ email, password }),
   }).then(checkErrors);
 };
 
@@ -22,7 +22,7 @@ export const authorize = (email, password) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ password, email }),
+    body: JSON.stringify({ email, password }),
   }).then(checkErrors);
 };
 
