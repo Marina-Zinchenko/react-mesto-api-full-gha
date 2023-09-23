@@ -1,3 +1,5 @@
+import { BASE_URL } from '../utils/consants';
+
 class Api {
   constructor(options) {
     this._url = options.url;
@@ -86,8 +88,6 @@ class Api {
   }
 }
 
-const api = new Api({
-  url: "https://mesto.zinchenkomv.nomoredomainsrocks.ru",
-});
+const api = new Api(BASE_URL);
 
 export default api;

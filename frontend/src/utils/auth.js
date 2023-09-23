@@ -1,4 +1,4 @@
-export const BASE_URL = "https://mesto.zinchenkomv.nomoredomainsrocks.ru";
+import { BASE_URL } from '../utils/consants';
 
 function checkErrors(res) {
   if (!res.ok) {
@@ -16,7 +16,7 @@ export const register = (email, password) => {
   }).then(checkErrors);
 };
 
-export const authorize = (email, password, token) => {
+export const authorize = (email, password) => {
   return fetch(`${BASE_URL}/signin`, {
     method: "POST",
     headers: {
