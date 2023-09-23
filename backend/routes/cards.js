@@ -7,10 +7,10 @@ const {
   validateCardId,
 } = require('../middlewares/celebrateErrors');
 
-router.get('/', getCards);
-router.post('/', validateCardPost, addCard);
-router.delete('/:cardId', validateCardId, deleteCard);
-router.put('/:cardId/likes', validateCardId, addLikeCard);
-router.delete('/:cardId/likes', validateCardId, deleteLikeCard);
+router.get('/api/', getCards);
+router.post('/api/', validateCardPost, addCard);
+router.delete('/api/:cardId', validateCardId, deleteCard);
+router.put('/api/:cardId/likes', validateCardId, addLikeCard);
+router.delete('/api/:cardId/likes', validateCardId, deleteLikeCard);
 
 module.exports = router;
