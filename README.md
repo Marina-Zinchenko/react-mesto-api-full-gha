@@ -7,7 +7,7 @@
 
 ## Ссылки на проект
 
-IP-адрес: https://158.160.114.59
+IP 158.160.114.59
 
 Frontend https://mesto.zinchenkomv.nomoredomainsrocks.ru
 
