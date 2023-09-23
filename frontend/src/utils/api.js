@@ -15,6 +15,7 @@ class Api {
   getInitialInfo(token) {
     return fetch(`${this._url}/users/me`, {
      headers: {
+      "Content-Type": "application/json",
       "Authorization": `Bearer ${token}`,
      },
     }).then(this._checkErrors);
@@ -24,6 +25,7 @@ class Api {
     return fetch(`${this._url}/cards`, {
       method: "GET",
       headers: {
+        "Content-Type": "application/json",
         "Authorization": `Bearer ${token}`,
        },
     }).then(this._checkErrors);
@@ -82,6 +84,7 @@ class Api {
     return fetch(`${this._url}/cards/${cardId}`, {
       method: "DELETE",
       headers: {
+        "Content-Type": "application/json",
         "Authorization": `Bearer ${token}`,
       },
     }).then(this._checkErrors);

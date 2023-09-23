@@ -1,12 +1,11 @@
 require('dotenv').config();
 const express = require('express');
-const { errors } = require('celebrate');
 const cors = require('cors');
+const { errors } = require('celebrate');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const auth = require('./middlewares/auth');
-
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const NotFoundError = require('./errors/NotFoundError');
@@ -59,7 +58,6 @@ app.use('*', (req, res, next) => {
 });
 
 app.use(errors());
-
 app.use(validationErrorServer);
 
 app.listen(PORT);
