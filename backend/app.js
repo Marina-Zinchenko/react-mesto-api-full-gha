@@ -39,9 +39,9 @@ mongoose.connect(DB_URL, {
 app.use(requestLogger);
 app.use(limiter);
 
-app.get('/crash-test', () => {
+app.get('/api/crash-test', () => {
   setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
+    throw new Error('Что то пошло не так, загрузка сервера  прервана');
   }, 0);
 });
 
