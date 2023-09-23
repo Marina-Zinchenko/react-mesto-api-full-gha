@@ -46,11 +46,11 @@ app.get('/crash-test', () => {
   }, 0);
 });
 
-app.post('/signin', validateUserLogin, login);
-app.post('/signup', validateUserCreate, createUser);
+app.post('/api/signin', validateUserLogin, login);
+app.post('/api/signup', validateUserCreate, createUser);
 app.use(auth);
-app.use('/users', require('./routes/users'));
-app.use('/cards', require('./routes/cards'));
+app.use('/api/users', require('./routes/users'));
+app.use('/api/cards', require('./routes/cards'));
 
 app.use(errorLogger);
 

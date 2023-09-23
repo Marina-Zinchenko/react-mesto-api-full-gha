@@ -88,6 +88,6 @@ class Api {
   }
 }
 
-const api = new Api(BASE_URL);
+const api = new Api({ url:BASE_URL });
 
 export default api;
