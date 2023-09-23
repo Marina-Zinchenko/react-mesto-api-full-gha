@@ -140,9 +140,9 @@ function App() {
       return;
     }
     auth
-      .checkToken(jwt, localStorage.jwt)
+      .checkToken(jwt)
       .then((data) => {
-        setUserEmail(data.data.email);
+        setUserEmail(data.email);
         setLoggedIn(true);
         navigate("/");
       })
