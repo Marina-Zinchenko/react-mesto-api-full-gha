@@ -1,1 +1,1 @@
-export const BASE_URL = "https://mesto.zinchenkomv.nomoredomainsrocks.ru";
+export const BASE_URL = "https://mesto.zinchenkomv.nomoredomainsrocks.ru/api";
