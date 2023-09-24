@@ -18,17 +18,13 @@ module.exports.login = (req, res, next) => {
       );
       res.send({ token });
     })
-    .catch((err) => {
-      next(err);
-    });
+    .catch(next);
 };
 
 module.exports.getUsers = (req, res, next) => {
   User.find({})
-    .then((users) => res.status(200).send(users))
-    .catch((err) => {
-      next(err);
-    });
+    .then((users) => res.send(users))
+    .catch(next);
 };
 
 module.exports.getMeUser = (req, res, next) => {

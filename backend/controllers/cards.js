@@ -6,9 +6,7 @@ const ForbiddenError = require('../errors/ForbiddenError');
 module.exports.getCards = (req, res, next) => {
   Card.find({})
     .then((cards) => res.send(cards))
-    .catch((err) => {
-      next(err);
-    });
+    .catch(next);
 };
 
 module.exports.addCard = (req, res, next) => {
@@ -36,7 +34,7 @@ module.exports.deleteCard = (req, res, next) => {
           .then(() => {
             res.status(200).send({ massage: 'Карточка удалена' });
           })
-          .catch((err) => next(err));
+          .catch(next);
       }
     })
     .catch((err) => {
